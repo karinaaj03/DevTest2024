@@ -1,0 +1,9 @@
+.cardContainer {
+    flex-direction: row;
+}
+
+.votes {
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+}
