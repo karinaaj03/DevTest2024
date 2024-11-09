@@ -14,13 +14,19 @@ public class PollRepository : BaseRepository<Poll>, IPollRepository
         _pollOptionRepository = pollOptionRepository;
     }
 
-    public async Task<int> CreateAsync(Poll entity)
+    public override async Task<int> CreateAsync(Poll entity)
     {
-        var options = entity.Options;
-        foreach (var option in options)
+        if (entity.Id == Guid.Empty)
         {
-            option.Id = Guid.NewGuid();
-            _pollOptionRepository.CreateAsync(option);
+            entity.Id = Guid.NewGuid();
+        }
+        foreach (var option in entity.Options)
+        {
+            if (option.Id == Guid.Empty)
+            {
+                option.Id = Guid.NewGuid();
+            }
+            await _pollOptionRepository.CreateAsync(option);
         }
         
         return await base.CreateAsync(entity);

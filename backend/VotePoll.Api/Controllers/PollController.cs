@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using VotePoll.Application.Commands.Command;
@@ -33,4 +34,45 @@ public class PollController : ControllerBase
         var result = await _mediator.Send(query);
         return Ok(result);
     }
+    
+    [HttpPost("{id}/votes")]
+    public async Task<IActionResult> Vote(Guid id, [FromBody] VoteRequest request)
+    {
+        try 
+        {
+            var command = new VoteCommand 
+            { 
+                PollId = id,
+                OptionId = request.OptionId,
+                EmailVoter = request.EmailVoter
+            };
+        
+            var result = await _mediator.Send(command);
+        
+            return Ok(new
+            {
+                id = result,
+                pollId = id,
+                optionId = request.OptionId,
+                voterEmail = request.EmailVoter
+            });
+        }
+        catch (ValidationException ex)
+        {
+            return BadRequest(new 
+            { 
+                message = "Unable to submit the vote.",
+                details = ex.Message
+            });
+        }
+        catch (Exception)
+        {
+            return StatusCode(500, new 
+            { 
+                message = "Unable to submit the vote.",
+                details = "An unexpected error occurred while processing your vote."
+            });
+        }
+    }
+
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VotePoll.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca72e8b4a5b4700b5935839159086cee4a85491f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ae871cbfbeeb90e70c1653861d2a0b24e56e28e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VotePoll.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VotePoll.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

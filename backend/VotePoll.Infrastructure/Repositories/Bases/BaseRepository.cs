@@ -8,8 +8,13 @@ public class BaseRepository<T> : IRepository<T> where T : class, IEntity, new()
 {
     public static List<T> Data = new();
     
-    public async Task<int> CreateAsync(T entity)
+    public virtual async Task<int> CreateAsync(T entity)
     {
+        if (entity.Id == Guid.Empty)
+        {
+            entity.Id = Guid.NewGuid();
+        }
+        
         Data.Add(entity);
         await Task.CompletedTask;
         return Data.Count;

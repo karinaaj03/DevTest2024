@@ -36,6 +36,7 @@ public class GetPollsQueryHandler : IRequestHandler<GetPollsQuery, List<PollDto>
                     .Where(o => poll.Options.Any(p=> p.Id == o.Id))
                     .Select(o => new PollOptionQueryDto
                     {
+                        Id = Guid.NewGuid(),
                         Name = o.Name,
                         Votes = o.Votes
                     }).ToList()

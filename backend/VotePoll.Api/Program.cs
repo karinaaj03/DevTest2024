@@ -17,6 +17,7 @@ builder.Services.AddAutoMapper(typeof(VotePollProfile).Assembly);
 
 builder.Services.AddSingleton<IPollRepository, PollRepository>();
 builder.Services.AddSingleton<IPollOptionRepository, PollOptionRepository>();
+builder.Services.AddSingleton<IVoteRepository, VoteRepository>();
 
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
