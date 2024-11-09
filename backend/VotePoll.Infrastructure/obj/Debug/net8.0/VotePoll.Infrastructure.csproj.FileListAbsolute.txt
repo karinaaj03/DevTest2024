@@ -1,0 +1,16 @@
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/bin/Debug/net8.0/VotePoll.Infrastructure.deps.json
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/bin/Debug/net8.0/VotePoll.Infrastructure.dll
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/bin/Debug/net8.0/VotePoll.Infrastructure.pdb
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/bin/Debug/net8.0/VotePoll.Domain.dll
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/bin/Debug/net8.0/VotePoll.Domain.pdb
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.csproj.AssemblyReference.cache
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.AssemblyInfoInputs.cache
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.AssemblyInfo.cs
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.csproj.CoreCompileInputs.cache
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.sourcelink.json
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.3ED1AA5E.Up2Date
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.dll
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/refint/VotePoll.Infrastructure.dll
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/VotePoll.Infrastructure.pdb
+/home/fundacion/Documents/DevTest2024/backend/VotePoll.Infrastructure/obj/Debug/net8.0/ref/VotePoll.Infrastructure.dll

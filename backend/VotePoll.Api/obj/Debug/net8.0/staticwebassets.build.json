@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Zd386ExbmabcBl3uxbpMNGPTqrKMbubebMAZVyeaVZc=",
+  "Source": "VotePoll.Api",
+  "BasePath": "_content/VotePoll.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
